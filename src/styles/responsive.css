@@ -1,0 +1,162 @@
+/* ------------------ Responsive Version ------------------ */
+
+@media screen and (min-width: 700px) {
+  header,
+  .nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header {
+    padding: 0 2rem;
+  }
+  .header_title {
+    font-size: 1.2rem;
+  }
+
+  .header_menu {
+    display: none;
+  }
+
+  nav {
+    width: 30%;
+    display: block;
+  }
+
+  .nav_item a {
+    padding: 1.2rem 0;
+  }
+
+  .hero_title {
+    font-size: 2rem;
+  }
+
+  .hero_subtitle {
+    width: 50%;
+  }
+
+  .hero_browse {
+    width: auto;
+    padding: 1rem 2rem;
+  }
+
+  .details {
+    grid-template-rows: 0.3fr 1fr 0.3fr 0.3fr;
+  }
+
+  .resto_img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .resto_img img {
+    width: 75%;
+  }
+
+  .resto_drink_menu,
+  .resto_food_menu,
+  .resto_drink_menu ul,
+  .resto_food_menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .resto_drink_menu ul,
+  .resto_food_menu ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    width: 20%;
+  }
+
+  .hero_title {
+    font-size: 3rem;
+  }
+
+  .explore_wrapper {
+    height: 100vh;
+  }
+
+  .explore_wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .explore_restaurants {
+    margin-top: 5rem;
+  }
+
+  .explore_restaurant_title {
+    width: 100%;
+    margin: 2rem;
+  }
+
+  .explore_restaurant_img {
+    flex: 1;
+    padding: 0 1rem;
+  }
+
+  .details {
+    flex: 1;
+    height: 60vh;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+  }
+
+  .restaurant_detail h2 {
+    margin: 3rem 0;
+    font-size: 2rem;
+  }
+
+  .content_review {
+    font-size: 1.5rem;
+  }
+
+  .reviewer_name {
+    font-size: 1rem;
+  }
+
+  .resto_img img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .resto_img {
+    margin: 0 2rem;
+  }
+
+  .restaurant_detail_wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .resto_drink_menu,
+  .resto_food_menu {
+    margin: 0;
+  }
+
+  .resto_food_menu h3,
+  .resto_drink_menu h3 {
+    text-align: left;
+  }
+
+  .resto_drink_menu ul,
+  .resto_food_menu ul {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .resto_drink_menu li,
+  .resto_food_menu li {
+    margin: 0.3rem 0.5rem;
+  }
+
+  .resto_drink_menu li:hover,
+  .resto_food_menu li:hover {
+    background-color: #eaeaea;
+  }
+}
