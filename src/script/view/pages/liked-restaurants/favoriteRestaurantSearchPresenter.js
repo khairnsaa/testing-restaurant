@@ -28,10 +28,6 @@ class FavoriteRestaurantSearchPresenter {
     this._showFoundRestaurant(foundRestaurant);
     document.getElementById('restaurant-search-container').dispatchEvent(new Event('restaurants:search:updated'));
   }
-
-  _showFoundRestaurant(restaurants) {
-    this._view.showRestaurants(restaurants);
-  }
 }
 
 export default FavoriteRestaurantSearchPresenter;

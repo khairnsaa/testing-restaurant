@@ -49,7 +49,7 @@ const renderRestaurantDetailTemplate = (restaurant) => {
 const renderRestaurantItemTemplate = (restaurant) => `
     <div class="explore_wrapper">
         <div class="explore_restaurant_img">
-            <img  src="${CONFIG.BASE_IMG_URL + restaurant.pictureId}" alt="${restaurant.name}">
+            <img class="lazyload" data-src="${CONFIG.BASE_IMG_URL + restaurant.pictureId}" alt="${restaurant.name}">
         </div>
         <div class="details">
             <h2 class="explore_restaurant_name"><a href="#">${restaurant.name}</a></h2>

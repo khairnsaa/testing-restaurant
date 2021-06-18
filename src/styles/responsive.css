@@ -32,6 +32,10 @@
     font-size: 2rem;
   }
 
+  .hero_img {
+    background-image: url("./images/hero-image_1-large.jpg");
+  }
+
   .hero_subtitle {
     width: 50%;
   }
@@ -79,7 +83,7 @@
   }
 
   .explore_wrapper {
-    height: 100vh;
+    height: 80vh;
   }
 
   .explore_wrapper {

@@ -1,15 +1,12 @@
 import FavoriteRestaurant from '../../data/database';
 import { renderRestaurantItemTemplate } from '../templates/template-creator';
+import FavoriteRestaurantSearchView from './liked-restaurants/favoriteRestaurantSearchView';
+
+const view = new FavoriteRestaurantSearchView();
 
 const Favorite = {
   async render() {
-    return `
-            <section class="favorite_container">
-                <h2>Favorite Restaurant</h2>
-
-                <div class="favorite_restaurant" id="favorite"></div>
-            </section>
-        `;
+    return view.getTemplate();
   },
 
   async afterRender() {
